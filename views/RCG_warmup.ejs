@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RCG - Khởi động</title>
+<!-- thay đổi ảnh -->
+<link rel = "icon" href="assets/images/logo1.jpg" type = "image/jpg">
+<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+<link rel="stylesheet" type="text/css" href="assets/css/warmUp.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Header -->
+<header>
+	<div class="container-fluid">
+		
+		<!-- Navigation -->
+	 	<div class="navbar top-navbar fixed-top row"> 
+	 		<div class="row">
+				<!-- Logo here -->
+	 			<div class="col-lg-3">
+	 				<!-- Code logo đổi nhau -->
+					<div class="logo">
+						<img src="assets/images/Logo/logo1.png" width="80" height="60" alt="Lg dưới">
+						<img src="assets/images/Logo/logoT.jpg" width="80" height="60" class="img-top" alt="Lg trên">
+					</div>
+					
+					<!-- Code logo trang chủ -->
+					<div class="logo_index">
+						<a href="http://localhost:8888"><img src="assets/images/Logo/logoBTC.png" width="140" height="40" alt="Lg trang chủ"></a>
+					</div>
+	 			</div>
+	 		<div class="col-lg-9">
+	 			<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+				
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul id="font-size" class="navbar-nav me-auto mb-2 mb-lg-0">
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888">Trang chủ</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/aboutus">Về chúng tôi</a>
+								</li>
+ 							
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/warmup">Khởi động</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/main">Tập luyện</a>
+								</li>
+
+							</ul>
+
+							<form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Tìm</button>
+							</form>
+						</div>
+					</div>
+					</nav>
+	 			</div>
+	 		</div>	
+		</div>	 
+	</div>
+</header>
+<!-- End header -->
+<h1>KHỞI ĐỘNG</h1>
+<h2>Một khởi đầu tốt là bước đệm cho thành công sau này!</h2>
+<main>
+	<div class="container">
+		<video src="assets/vid/1.mp4" class="slider" autoplay loop muted></video>
+
+			<ul>
+				<li onclick="videoslider('assets/vid/1.mp4')"><video src="assets/vid/1.mp4"></video></li>
+				<li onclick="videoslider('assets/vid/2.mp4')"><video src="assets/vid/2.mp4"></video></li>
+				<li onclick="videoslider('assets/vid/3.mp4')"><video src="assets/vid/3.mp4"></video></li>
+			</ul>
+	</div>
+</main>
+
+
+<script>
+
+	function videoslider(links){
+		document.querySelector(".slider").src = links;
+    }
+
+</script>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="http://localhost:8888">RCG_ONGym</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+	
+</body>
+</html>

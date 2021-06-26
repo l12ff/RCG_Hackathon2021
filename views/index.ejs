@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RCG - ONGym</title>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- change the link to change icon -->
+    <link rel = "icon" href = "public/assets/images/logo1.jpg" type = "image/jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+ 
+<body>
+
+<!-- Header -->
+<header>
+	<div class="container-fluid">
+		
+		<!-- Navigation -->
+	 	<div class="navbar top-navbar fixed-top row"> 
+	 		<div class="row">
+				<!-- Logo here -->
+	 			<div class="col-lg-3">
+	 				<!-- Code logo đổi nhau -->
+					<div class="logo">
+						<img src="assets/images/Logo/logo1.png" width="80" height="60" alt="Lg dưới">
+						<img src="assets/images/Logo/logoT.jpg" width="80" height="60" class="img-top" alt="Lg trên">
+					</div>
+					
+					<!-- Code logo trang chủ -->
+					<div class="logo_index">
+						<a href="http://localhost:8888"><img src="assets/images/Logo/logoBTC.png" width="140" height="40" alt="Lg trang chủ"></a>
+					</div>
+	 			</div>
+	 		<div class="col-lg-9">
+	 			<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+				
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul id="font-size" class="navbar-nav me-auto mb-2 mb-lg-0">
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888">Trang chủ</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/aboutus">Về chúng tôi</a>
+								</li>
+ 							
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/warmup">Khởi động</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/main">Tập luyện</a>
+								</li>
+
+							</ul>
+
+							<form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Tìm</button>
+							</form>
+						</div>
+					</div>
+					</nav>
+	 			</div>
+	 		</div>	
+		</div>	 
+	</div>
+</header>
+<!-- End header -->
+
+    <!-- <div id="info" style='display:none'></div> -->
+
+    <div id="loading" style='display:flex'>
+       <!--  <div class="spinner-text">
+            Loading PoseNet model...
+        </div> -->
+        <!-- <div class="sk-spinner sk-spinner-pulse"></div> -->
+    </div>
+
+    <!-- camera part -->
+    <div id='main' style='display:none'>
+        
+        <!-- camera ask permission -->
+        <video id="video" playsinline style="display: none;"></video>
+        <!-- show camera -->
+        <canvas id="output" />
+    
+
+    </div>
+
+    <div id='picture'>
+        <img id="rest">
+        <span id='span_'></span>
+        <button id='button_' type="button">Next</button>
+    </div>
+
+    </div class="music">
+        <img src="assets/images/Music/play.png" id="icon"/>
+    <div>
+
+    <audio id="mySong">
+        <source src="assets/music/Demo.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.pause){
+                mySong.play();;
+                icon.src = "assets/images/Music/pause.png";
+            }else{
+                mySong.pause();
+                icon.src = "assets/images/Music/play.png";
+            }     
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@2.2.1"></script>
+
+ 
+    <!-- Adds the WASM backend to the global backend registry -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@2.0.0/dist/tf-backend-wasm.js"></script>
+    <script src="assets/js/demo_utils.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/core.js"></script>
+    
+    
+</body>
+
+</html>

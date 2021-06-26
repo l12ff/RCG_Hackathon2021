@@ -1,0 +1,50 @@
+[
+	{
+		"a": "leftShoulder",
+		"b": "leftElbow"
+	},
+	{
+		"a": "rightShoulder",
+		"b": "rightElbow"
+	},
+	{
+		"a": "leftElbow",
+		"b": "leftWrist"
+	},
+	{
+		"a": "rightElbow",
+		"b": "rightWrist"
+	},
+	{
+		"a": "leftShoulder",
+		"b": "leftHip"
+	},
+	{
+		"a": "rightShoulder",
+		"b": "rightHip"
+	},
+	{
+		"a": "leftShoulder",
+		"b": "rightShoulder"
+	},
+	{
+		"a": "leftHip",
+		"b": "rightHip"
+	},
+	{
+		"a": "leftHip",
+		"b": "leftKnee"
+	},
+	{
+		"a": "rightHip",
+		"b": "rightKnee"
+	},
+	{
+		"a": "leftKnee",
+		"b": "leftAnkle"
+	},
+	{
+		"a": "rightKnee",
+		"b": "rightAnkle"
+	}
+]

@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>RCG - Về chúng tôi</title>
+	<!-- thay đổi ảnh -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<link rel = "icon" href="assets/images/logo1.jpg" type = "image/jpg">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/aboutUs.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+<body>
+	<!-- Header --> 
+<header>
+	<div class="container-fluid">
+		
+		<!-- Navigation -->
+	 	<div class="navbar top-navbar fixed-top row"> 
+	 		<div class="row">
+				<!-- Logo here -->
+	 			<div class="col-lg-3">
+	 				<!-- Code logo đổi nhau -->
+					<div class="logo">
+						<img src="assets/images/Logo/logo1.png" width="80" height="60" alt="Lg dưới">
+						<img src="assets/images/Logo/logoT.jpg" width="80" height="60" class="img-top" alt="Lg trên">
+					</div>
+					
+					<!-- Code logo trang chủ -->
+					<div class="logo_index">
+						<a href="http://localhost:8888"><img src="assets/images/Logo/logoBTC.png" width="140" height="40" alt="Lg trang chủ"></a>
+					</div>
+	 			</div>
+	 		<div class="col-lg-9">
+	 			<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+				
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul id="font-size" class="navbar-nav me-auto mb-2 mb-lg-0">
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888">Trang chủ</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/aboutus">Về chúng tôi</a>
+								</li>
+ 							
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/warmup">Khởi động</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="http://localhost:8888/main">Tập luyện</a>
+								</li>
+
+							</ul>
+
+							<form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Tìm</button>
+							</form>
+						</div>
+					</div>
+					</nav>
+	 			</div>
+	 		</div>	
+		</div>	 
+	</div>
+</header>
+<!-- End Header -->
+
+<main>	
+	<div id="content-au">
+		<h3>Rainbow Chicken Gangs</h3>
+		<h1>GẶP GỠ CHÚNG TÔI</h1>
+		<p></p>
+		<h5>Tất cả chúng tôi đều rất khác nhau. Chúng tôi đến từ các trường THPT khác nhau, chúng tôi yêu âm nhạc, ẩm thực, phim ảnh khác nhau. Nhưng chúng tôi có một cái gì đó đoàn kết giữa tất cả chúng tôi. Đó là team của chúng tôi. Chúng tôi là trái tim của nó. Chúng tôi không chỉ là một đội, chúng tôi là một gia đình.</h5>
+	</div>
+	<div>
+		<img src="assets/images/AboutUs/Done.png"  style="width: 100%" alt="ảnh chia"/>
+		<video src="assets/vid/Final Render.mp4" autoplay loop muted style="width: 100%"/>
+	</div>
+	
+	<div class="w3-container">
+
+	<div class="w3-content w3-display-container" style="max-width:800px">
+		<img class="mySlides" src="assets/images/AboutUs/AULong.jpg" style="width:100%" alt="Long">
+		<img class="mySlides" src="assets/images/AboutUs/AUMi.jpg" style="width:100%" alt="Mi">
+		<img class="mySlides" src="assets/images/AboutUs/AUDat.jpg" style="width:100%" alt="Dat">
+		<img class="mySlides" src="assets/images/AboutUs/AUNhii.jpg" style="width:100%" alt="Nhi">
+		<img class="mySlides" src="assets/images/AboutUs/AUTai.jpg" style="width:100%" alt="Tai">
+		<div id="btn_slide" class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+			<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
+		</div>
+	</div>
+	</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 3000); // Thay đổi ảnh mỗi 3s
+		}
+	</script>
+</main>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="http://localhost:8888">RCG_ONGym</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+</html>
