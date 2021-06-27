@@ -18,7 +18,7 @@ function check(data1, data2, connected_part) {
     // console.log(error_cost);
   })
   // console.log(sum_error);
-  return sum_error < 1,6;
+  return sum_error < 2,5;
 }
 
 let muctieu = undefined; 
